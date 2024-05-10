@@ -1,4 +1,4 @@
-import React, { Component, useContext } from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 
 // Components
@@ -33,6 +33,7 @@ const RoomDetails = () => {
 
   return (
     <section>
+      <ScrollToTop />
       {/* banner  */}
       <div className="bg-room bg-cover bg-center h-[600px] relative flex justify-center items-center">
         {/* overlay  */}
@@ -48,7 +49,7 @@ const RoomDetails = () => {
           <div className="w-full h-full lg:w-[60%] px-6 ">
             <h2 className="h2">{name}</h2>
             <p className="mb-8">{description}</p>
-            <img className="mb-8" src={imageLg} alt="" />
+            <img className="mb-8" src={imageLg} alt="/" />
 
             {/* facilites  */}
             <div className="mt-12">
@@ -105,7 +106,7 @@ const RoomDetails = () => {
               </div>
             </div>
 
-            {/* rule  */}
+            {/*hotel Rule  */}
 
             <div>
               <h3 className="h3">Hotel Rules</h3>

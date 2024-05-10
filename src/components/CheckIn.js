@@ -5,7 +5,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import "../datepicker.css";
 
 // icons
-
 import { BsCalendar } from "react-icons/bs";
 
 const CheckIn = () => {
